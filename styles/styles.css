@@ -1,0 +1,98 @@
+/* Variable Declarations */
+:root {
+  --main-bg-color: #98c1d9;
+  --secondary-bg-color: #e0e1dd;
+  --main-font-color: #fff;
+  --secondary-font-color: #778da9;
+}
+
+/* Poppins Font import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+/*Mobile First*/
+* {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /*Placeholder font size*/
+  /*TODO:Placeholder border - delete*/
+  /* border: solid black 2px; */
+
+  height: 100rem;
+  margin: 0 auto;
+  width: 55rem;
+  /*TODO: Media queries for desktop size*/
+}
+
+.bodyWrapper {
+  background: var(--secondary-bg-color);
+  width: 100%;
+  height: 100%;
+}
+
+.topSection {
+  align-items: center;
+  background-color: var(--main-bg-color);
+  display: flex;
+  height: 30%;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.msgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  margin: 0;
+  height: 65%;
+  text-align: center;
+  width: 75%;
+}
+
+.msgText {
+  font-size: 2.6rem;
+  /* padding: 2rem; */
+  font-weight: 300;
+  margin: 0;
+  color: var(--main-font-color);
+}
+
+.btnWrapper {
+  /* border: solid 2px red; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  top: -35px;
+  width: 80%;
+}
+
+button {
+  background: #fff;
+  border-radius: 15px;
+  border: none;
+  color: var(--secondary-font-color);
+  font-size: 1.8rem;
+  height: 55px;
+  margin: 0.5rem 0.1rem;
+  outline: none;
+  width: 125px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: var(--secondary-font-color);
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
