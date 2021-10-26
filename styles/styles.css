@@ -74,6 +74,7 @@ body {
 }
 
 button {
+  /*TODO:give buttons outline*/
   background: #fff;
   border-radius: 15px;
   border: none;
