@@ -1,3 +1,5 @@
+// TODO:Animate on button press as well as page reload.
+
 //Declare button variables
 var happyBtn = document.getElementById("happyBtn");
 var calmBtn = document.getElementById("calmBtn");
@@ -68,6 +70,7 @@ function generateMessage(event) {
   if (x.id == "happyBtn") {
     textArea.innerHTML =
       happyMessages[Math.floor(Math.random() * happyMessages.length)];
+    // console.log(randomNumber * happyMessages.length);
   } else if (x.id == "calmBtn") {
     textArea.innerHTML =
       calmMessages[Math.floor(Math.random() * calmMessages.length)];
