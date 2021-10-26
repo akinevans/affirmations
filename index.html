@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Affirmations</title>
     <!-- Normalize link -->
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
     <!--CSS link-->
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+    <!--CSS Animate framework-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      type="text/css"
+    />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -16,8 +22,13 @@
       <!--Top Section-->
       <div class="topSection">
         <div class="msgWrapper">
-          <!--TODO: Add fly-in animations.-->
-          <p id="message_text" class="msgText">How are you feeling?</p>
+          <!--TODO: Animate on button press as well as page reload.-->
+          <p
+            id="message_text"
+            class="msgText animate__animated animate__fadeInUp"
+          >
+            How are you feeling?
+          </p>
         </div>
       </div>
       <!--Button Section-->
@@ -30,7 +41,9 @@
         <button id="angryBtn">Angry</button>
       </div>
       <!--TODO: insert Twitter link-->
-      <footer><a href="#">Follow me on Twitter</a></footer>
+      <footer>
+        <a href="https://twitter.com/akinCodes">Follow me on Twitter</a>
+      </footer>
     </div>
   </body>
 </html>

@@ -55,9 +55,42 @@ var angryMessages = [
   "This anger is temporary.",
 ];
 //Define text area
+var textArea = document.getElementById("message_text");
 
 //Declare function
-// Declare variable for event target
-//Declare variable for generating random number
+function generateMessage(event) {
+  // Declare variable for event target
+  var x = event.target;
+  //Declare variable for generating random number
+  /*TODO: Why is randomNumber not working?*/
+  var randomNumber = Math.floor(Math.random());
+  // write if statements for each possible event (btn)
+  if (x.id == "happyBtn") {
+    textArea.innerHTML =
+      happyMessages[Math.floor(Math.random() * happyMessages.length)];
+  } else if (x.id == "calmBtn") {
+    textArea.innerHTML =
+      calmMessages[Math.floor(Math.random() * calmMessages.length)];
+  } else if (x.id == "sadBtn") {
+    textArea.innerHTML =
+      sadMessages[Math.floor(Math.random() * sadMessages.length)];
+  } else if (x.id == "nervousBtn") {
+    textArea.innerHTML =
+      nervousMessages[Math.floor(Math.random() * nervousMessages.length)];
+  } else if (x.id == "hurtBtn") {
+    textArea.innerHTML =
+      hurtMessages[Math.floor(Math.random() * hurtMessages.length)];
+  } else if (x.id == "angryBtn") {
+    textArea.innerHTML =
+      angryMessages[Math.floor(Math.random() * angryMessages.length)];
+  }
+  console.log(x.id);
+}
 
-console.log(angryMessages[3]);
+//connect buttons to function
+happyBtn.onclick = generateMessage;
+calmBtn.onclick = generateMessage;
+sadBtn.onclick = generateMessage;
+nervousBtn.onclick = generateMessage;
+hurtBtn.onclick = generateMessage;
+angryBtn.onclick = generateMessage;

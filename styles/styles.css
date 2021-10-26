@@ -55,7 +55,7 @@ body {
 }
 
 .msgText {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   /* padding: 2rem; */
   font-weight: 300;
   margin: 0;
@@ -74,7 +74,6 @@ body {
 }
 
 button {
-  /*TODO:give buttons outline*/
   background: #fff;
   border-radius: 15px;
   border: none;
@@ -82,8 +81,14 @@ button {
   font-size: 1.8rem;
   height: 55px;
   margin: 0.5rem 0.1rem;
-  outline: none;
   width: 125px;
+  transition: 0.2s all ease;
+}
+
+button:active {
+  opacity: 0.8;
+  /* background-color: #e0e1dde9; */
+  /* outline: solid 2px var(--main-bg-color); */
 }
 
 footer {
